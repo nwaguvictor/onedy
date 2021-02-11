@@ -1,0 +1,26 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-clip: padding-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+:root {
+    --clr-primary: #FF5722;
+    --clr-fade-1: #EEE0CA;
+    --clr-seconday: #04004D;
+    --clr-white: #FFFFFF;
+}
