@@ -68,33 +68,3 @@
         }
     }
 }
-
-// Media
-.media-section {
-    width: 100%;
-    padding: 2rem 10rem;
-    background-color: var(--clr-light);
-
-    @media screen and (max-width: 480px) {
-        padding: 2rem;
-    }
-}
-
-.media {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-
-    @media screen and (max-width: 480px) {
-        flex-direction: column;
-    }
-        
-    &__item {
-        width: 400px;
-        @media screen and (max-width: 480px) {
-            margin-bottom: 2rem;
-            width: 100%;
-        }
-    }
-}

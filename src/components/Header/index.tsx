@@ -1,12 +1,6 @@
-import Navbar from '../Navbar'
-import asianWoman from '../../assets/img/asian-woman.png'
-import google from '../../assets/svgs/google.svg'
-import businessInsider from '../../assets/svgs/business-insider.svg'
-import careem from '../../assets/svgs/careem.svg'
-import linkedin from '../../assets/svgs/linkedin.svg'
-import samsung from '../../assets/svgs/samsung.svg'
 import './header.scss'
 import { Button } from '../Common/Button'
+import asianWoman from '../../assets/img/asian-woman.png'
 
 function Header() {
     return (
@@ -30,17 +24,6 @@ function Header() {
                 <aside className="hero__right">
                     <img src={asianWoman} alt="asian woman holding laptop" />
                 </aside>
-            </section>
-
-            {/* Media */}
-            <section className="media-section">
-                <div className="media">
-                    <img src={google} alt="google logo" className="media__item"/>
-                    <img src={linkedin} alt="linkedin logo" className="media__item"/>
-                    <img src={businessInsider} alt="businessInsider logo" className="media__item"/>
-                    <img src={samsung} alt="samsung logo" className="media__item"/>
-                    <img src={careem} alt="careem logo" className="media__item"/>
-                </div>
             </section>
         </>
     )
