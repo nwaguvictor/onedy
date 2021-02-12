@@ -1,17 +1,84 @@
 .navigation {
     display: flex;
+    width: 100%;
     align-items: center;
     min-height: 6rem;
     padding: 0 14rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    @media screen and (max-width: 1200px) {
+        padding: 0 8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 2rem;
+        justify-content: flex-start;
+    }
+}
+
+.toggler {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1000px) {
+        display: flex;
+    }
+
+    &:hover &__menu {
+        background-color: var(--clr-seconday);
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: .2rem;
+        background-color: var(--clr-primary);
+        position: relative;
+        transition: all .2s;
+
+        &::before {
+            content: "";
+            width: 115%;
+            height: inherit;
+            position: absolute;
+            left: 0;
+            top: -8px;
+            background-color: inherit;
+        }
+        &::after {
+            content: "";
+            width: 80%;
+            height: inherit;
+            position: absolute;
+            left: 0;
+            top:  8px;
+            background-color: inherit;
+        }
+    }
 }
 
 .logo {
     display: flex;
-    flex: 0 0 20rem;
+    flex: 0 1 20rem;
     align-items: center;
 
     &__icon {
         margin-right: 8px;
+    }
+    &__text {
+        color: #04004D;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
     }
 }
 
@@ -19,13 +86,18 @@
     display: flex;
     margin-right: auto;
 
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+
     &__item {
         text-decoration: none;
-        padding: 1.6rem 1.6rem;
-        color: #04004D;
+        padding: 1.6rem 2px;
+        margin: 0 2rem;
         position: relative;
+        color: #04004D;
         border-top: 2px solid transparent;
-        transition: all .2s ease-in;
+        transition: all .2s;
 
         &:hover {
             border-top: 2px solid var(--clr-primary);
@@ -34,20 +106,27 @@
         &::after {
             content: "";
             position: absolute;
-            left: 50%;
-            bottom: 6px;
+            left: 45%;
             width: .5rem;
             height: .45rem;
             border-radius: 50%;
+            top: 30px;
             background-color: var(--clr-primary);
-            transform: scale(0);
-            transition: all .2s ease-in;
+            opacity: 0;
+            transition: all .2s;
         }
 
         &:hover::after {
-            transform: scale(1);
+            opacity: 1;
+            top: 48px;
         }
     }
 
 
+    
+}
+.user-account {
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 }

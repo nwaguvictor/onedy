@@ -2,9 +2,9 @@ import * as React from 'react'
 import styled from "styled-components"
 
 // Component
-export const Button = ({children, ...props}: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({className, children, ...props}) => {
     return (
-        <StyledButton {...props}>
+        <StyledButton className={className} {...props}>
             {children}
         </StyledButton>
     )
@@ -13,6 +13,7 @@ export const Button = ({children, ...props}: ButtonProps) => {
 // Interface
 interface ButtonProps{
     children: React.ReactNode;
+    className?: string;
     outline?: boolean;
 }
 

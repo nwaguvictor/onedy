@@ -3,19 +3,35 @@
     padding: 0;
     box-sizing: inherit;
     background-clip: padding-box;
+    backface-visibility: hidden;
 }
 
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 56.25%;
+    }
 }
 
 body {
-    max-width: 1400px;
+    // max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 400;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 2rem;
 }
 
 :root {
@@ -23,4 +39,5 @@ body {
     --clr-fade-1: #EEE0CA;
     --clr-seconday: #04004D;
     --clr-white: #FFFFFF;
+    --clr-light: #FDFDFD;
 }

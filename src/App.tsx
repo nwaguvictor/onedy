@@ -1,16 +1,18 @@
 import * as React from 'react'
 import * as UI from './components/Common'
-import Header from './components/Header'
-
-import './App.scss'
-
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import './styles/App.scss'
 
 class App extends React.Component {
     render() {
         return (
-            <UI.Container>
-                <Header />
+            <React.Fragment>
+                <UI.Container>
+                    <Navbar />
+                <Home />
             </UI.Container>
+            </React.Fragment>
         );
     }
 }

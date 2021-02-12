@@ -5,6 +5,10 @@ import { Button } from '../Common/Button';
 function Navbar() {
     return (
         <nav className="navigation">
+            <div className="toggler">
+                <div className="toggler__menu"></div>
+            </div>
+
             <div className="logo">
                 <img src={onedyLogo} alt="logo icon" className="logo__icon" />
                 <h3 className="logo__text">Onedy</h3>
@@ -18,7 +22,7 @@ function Navbar() {
             </div>
             <div className="user-account">
                 <a href="#" className="navbar__item">Login</a>
-                <Button outline>Register</Button>
+                <Button outline className="ml-4">Register</Button>
             </div>
         </nav>
     )
