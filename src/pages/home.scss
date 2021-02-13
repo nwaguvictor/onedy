@@ -3,6 +3,7 @@
     width: 100%;
     padding: 2rem 10rem;
     background-color: var(--clr-light);
+    display: none;
 
     @media screen and (max-width: 480px) {
         padding: 2rem;
@@ -50,8 +51,68 @@
     justify-content: center;
 
     &__item {
-        &:not(:last-of-type) {
-            margin-right: 10px;
+
+        transition: all .3s;
+
+        &:hover {
+            background: var(--clr-primary);
+            color: var(--clr-white);
+            transform: translateY(-3rem);
         }
+        
+        &:not(:last-of-type) {
+            margin-right: 16px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+
+
+        &__item {
+            transition: all .3s;
+            
+            &--2 {
+                transform: translateY(-20px);
+                z-index: 3;
+
+                &:hover {
+                    transform: translateY(-20px);
+                }
+            }
+            &--1 {
+                transform: translateY(20px) translateX(45px);
+                z-index: 2;
+
+                &:hover {
+                    transform: translateY(20px) translateX(45px);
+                    z-index: 4;
+                }
+            }
+            &--3 {
+                transform: translateY(20px) translateX(-45px);
+                z-index: 2;
+
+                &:hover {
+                    z-index: 4;
+                    transform: translateY(20px) translateX(-45px);
+                }
+            }
+        }
+    }
+}
+
+// Course Previews
+.course-preview {
+    padding: 6rem 14rem;
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &__right {
+        display: flex;
+        align-items: baseline;
     }
 }

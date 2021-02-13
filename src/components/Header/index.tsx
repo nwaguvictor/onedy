@@ -17,8 +17,8 @@ function Header() {
                         </p>
                     </header>
                     <div className="hero__cta">
-                        <Button className="mr-4 mb-3">Get Started</Button>
-                        <Button outline>Learn more</Button>
+                        <Button className="mr-4 mb-3 px-4 py-3">Get Started</Button>
+                        <Button className="px-4 py-3" outline>Learn more</Button>
                     </div>
                 </aside>
                 <aside className="hero__right">

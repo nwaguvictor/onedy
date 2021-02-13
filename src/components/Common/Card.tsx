@@ -1,5 +1,4 @@
-import styled from "styled-components"
-
+import styled from "styled-components/macro"
 interface ICard {
     title: string,
     icon: any,
@@ -16,13 +15,13 @@ export const Card: React.FC<ICard> = ({className, children, title, icon}) => {
     )
 }
 
-
 // Card Styles
 const Container = styled.div`
     width: 25rem;
     height: auto;
     padding: 3rem 3.5rem;
     display: flex;
+    background-color: var(--clr-white);
     align-items: center;
     flex-direction: column;
     border-radius: 4px;
@@ -30,13 +29,6 @@ const Container = styled.div`
     text-align: center;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    transition: all .2s;
-
-    &:hover {
-        background: var(--clr-primary);
-        color: var(--clr-white);
-        transform: translateY(-3rem);
-    }
 `;
 
 const CardIcon = styled.img`
@@ -51,6 +43,7 @@ const CardIcon = styled.img`
 const CardTitle = styled.h3`
     font-family: inherit;
     font-weight: 700;
+    font-size: 1.6rem;
 `;
 
 const CardDesc = styled.p`

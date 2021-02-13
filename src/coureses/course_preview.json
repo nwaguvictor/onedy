@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"title": "UI/UX Case Studies Portfolio Masterclass",
+		"teacher": "Nathalie Rohman",
+		"rating": 5.0,
+		"rateCount": 1204,
+		"students": 2029,
+		"featureImage": "",
+		"featureText": "UI/UX"
+	},
+	{
+		"id": 2,
+		"title": "Procreate: Simple Steps to Create Awesome Animations",
+		"teacher": "Abraham Mabar",
+		"rating": 5.0,
+		"rateCount": 553,
+		"students": 314,
+		"featureImage": "",
+		"featureText": "Illustration"
+	},
+	{
+		"id": 3,
+		"title": "Prepare for Your Shoot Without Breaking the Bank",
+		"teacher": "Felix Junaedi",
+		"rating": 5.0,
+		"rateCount": 215,
+		"students": 234,
+		"featureImage": "",
+		"featureText": "Photography"
+	}
+]
